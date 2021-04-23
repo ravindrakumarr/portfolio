@@ -1,5 +1,5 @@
 body{
-    margin: 0; font-size: 16px; text-align: center;
+    margin: 0; font-size: 14px; text-align: center;
     background-color: rgba(0,0,0,0.03); 
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
@@ -11,24 +11,27 @@ body{
 } 
 .inside-jumbo-element{width: 80%; margin-left: 10%; margin-top: 150px; font-family: 'Alata'; font-size: 35px; color: white;}
 
-.second-element{width: 80%; margin-left: 10%; min-height: 100px; margin-top: 450px; line-height: 1.8;}
+.second-element{width: 80%; margin-left: 10%; min-height: 400px; margin-top: 450px; line-height: 1.8;}
 .second-element:after{display: table; content: ""; clear: both;}
-
 .second-element-left{float: left; width: 40%; 
   background-image: linear-gradient(to right, rgb(99, 194, 114) , rgb(145, 212, 155)); color: white;}
-.second-element-right{float: left; width: 55%;margin-left: 5%;}
+.second-element-right{float: left; width: 55%;margin-left: 5%; text-align: left;}
 
 
 .third-element{width: 80%; margin-left: 10%; padding: 25px 0px 25px 0px; min-height: 600px;}
 .third-element:after{display: table; content: ""; clear: both;}
-.third-element-child{width: 30%; margin-left: 3.33%; float: left; min-height: 500px; line-height: 1.8;}
+.third-element-child{width: 30%; margin-left: 3.33%; float: left; min-height: 500px; line-height: 1.8;
+   text-align: left; padding-bottom: 10px;}
 
 
 .fourth-element{width: 80%; margin-left: 10%; padding: 25px 0px 25px 0px; min-height: 600px;}
 .fourth-element:after{display: table; content: ""; clear: both;}
-.fourth-element-left-child{width: 40%; float: left; background-image: url('../assets/exp.png'); background-size: cover;
-  background-repeat: no-repeat; height: 600px;}
-.fourth-element-right-child{width: 55%; margin-left: 5%; float: left; height: 500px; line-height: 1.8; height: 600px;}  
+.fourth-element-left-child{width: 40%; float: left; text-align:left; height: 500px;line-height: 1.8;}
+.fourth-element-right-child{width: 55%; margin-left: 5%; text-align: left;float: left; height: 500px; line-height: 1.8; }  
+
+.fourth-element-left-child-sub-left, .fourth-element-left-child-sub-cat-left{width: 50%; float: left; text-align: left; padding: 8px 0px 8px 0px;}
+.fourth-element-left-child-sub-right, .fourth-element-left-child-sub-cat-right{width: 50%; float: left; text-align: right; padding: 8px 0px 8px 0px;}
+
 
 
 .fifth-element{width: 80%; margin-left: 10%; padding: 25px 0px 25px 0px; min-height: 200px;}
