@@ -1,0 +1,6 @@
+.big-black-header{font-size: 22px; color: #4d4d4d;}
+
+.box-shadow{box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.025); }
+
+.learn-more{padding: 10px 20px 10px 10px; background-color: #fff; color: #4d4d4d; border: none; border-radius: 1px;}
+.learn-more:hover{cursor: pointer;  background-color: #ff6666; color: none; transition-duration: 0.5s; color: #fff;}
