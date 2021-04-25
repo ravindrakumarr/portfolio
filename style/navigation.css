@@ -1,7 +1,7 @@
 .topnav {
-    overflow: hidden; background: none; margin-top: 20px; height: 40px; width: 80%; margin-left: 10%;
+    overflow: hidden; position: fixed; top: 20px; background: none; height: 50px; width: 80%; margin-left: 10%;
   }
-  .topnav a {
+  .topnav a:not(:first-child) {
     float: right;display: block;
     color: #fff;
     text-align: center;
@@ -12,6 +12,7 @@
   
   .topnav a:hover {
     color: #63c272;
+    background-color: #fff;
   }
 
   .topnav .icon {
