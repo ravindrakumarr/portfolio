@@ -1,5 +1,6 @@
 .topnav {
-    overflow: hidden; position: fixed; top: 20px; background: none; height: 50px; width: 80%; margin-left: 10%;
+    overflow: hidden; position: fixed; top: 0px; background: none; height: 50px; width: 100%;
+    padding: 10px 0px 10px 40px; z-index: 999999999999999999;
   }
   .topnav a:not(:first-child) {
     float: right;display: block;
