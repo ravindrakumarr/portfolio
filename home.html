@@ -18,16 +18,25 @@
     <script src="script/navigation.js"></script>
 
     <!---Navigation section-->
-    <div class="topnav" id="myTopnav">
-        <div class="topnav-content-left" style="float: left">
-          <span class="logo-href">RK</span>
-        </div>
-        <div class="topnav-content-blank">.</div>
-        <div class="topnav-content-right"><a href="#" class="topnav-content-right-link">Home</a></div>
-        <div class="topnav-content-right"><a href="#" class="topnav-content-right-link">Contact</a></div>
-        <div class="topnav-content-right"><a href="#" class="topnav-content-right-link">About</a></div>
-        <div class="topnav-content-right"><a href="#" class="topnav-content-right-link">News</a></div>
-    </div>
+    <header>
+      <nav class="navbar" id="navbar">
+          <div class="logo"><a href="#">RK</a></div>
+          <a class="togglebtn" href="#"><span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span></a>
+          <div class="navbar-links">
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">My Blogs</a></li>
+                  <li><a href="#">Work Stuff</a></li>
+                  <li><a href="#">Contact Me</a></li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+
+
+
 
     <!---Top Page Part-->
     <div class="jumbo-element">
@@ -53,25 +62,48 @@
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
         <br/><br/>
 
-        <span class="skill-name">React JS</span>
-        <div class="myskills">
-          <div id="react"></div>
-        </div>
-        <br>
 
-        <span class="skill-name">Angular</span>
-        <div class="myskills">
-          <div id="angular"></div>
-        </div>
-        <br>
+        <div id="bars">
 
-        <span class="skill-name">Laravel</span>
-        <div class="myskills">
-          <div id="laravel"></div>
+
+          <div class="bar" data-percent="80">
+            <h4>CSS</h4>
+            <canvas class="bar-circle" width="70" height="70"></canvas>
+          </div>
+          <div class="bar" data-percent="75">
+            <h4>HTML5</h4>
+            <canvas class="bar-circle" width="70" height="70"></canvas>
+          </div>
+          <div class="bar" data-percent="65">
+            <h4>JavaScript</h4>
+            <canvas class="bar-circle" width="70" height="70"></canvas>
+          </div>
+          <div class="bar" data-percent="50">
+            <h4>PHP</h4>
+            <canvas class="bar-circle" width="70" height="70"></canvas>
+          </div>
+  
+          <div class="bar" data-percent="80">
+            <h4>Front End</h4>
+            <canvas class="bar-circle" width="70" height="70"></canvas>
+          </div>
+          <div class="bar" data-percent="80">
+            <h4>Back End</h4>
+            <canvas class="bar-circle" width="70" height="70"></canvas>
+          </div>
+          <div class="bar" data-percent="80">
+            <h4>Linux</h4>
+            <canvas class="bar-circle" width="70" height="70"></canvas>
+          </div>
+          <div class="bar" data-percent="80">
+            <h4>Laravel</h4>
+            <canvas class="bar-circle" width="70" height="70"></canvas>
+          </div>
+  
+  
         </div>
-        <br>
+
         
-        <button onclick="move()">Click Me</button> 
 
       </div>
 
@@ -173,7 +205,7 @@
       
     </div>
     <!--End of third Element-->
-
+  
     <a href="https://github.com/ravindrakumarr"><button class="learn-more box-shadow">Visit to view more projects</button></a>
 
 
@@ -232,10 +264,10 @@
     <div class="footer-element">
       <br><br><span style="font-size: 20px;" id="contact">Let me Build your portfolio</span><br><br>
       Mail me: rkumar6821@gmail.com | Meet me: Hyderbad,India<br><br>
-      Thanks to<br> <a href="https://www.flaticon.com" class="link">Flaticon</a> | <a href="https://www.pexels.com" class="link">Pexels</a> | <a href="https://www.W3schools.com" class="link">W3schools</a><br><br>
-      <a href="https://www.facebook.com/ravindra.kumar.50767"><img src="icons/facebook.png" width="22px" height="22px"></a>&nbsp; 
-      <a href="http://instagram.com/ravindra_kumarr"><img src="icons/instagram.png" width="22px" height="22px"></a>&nbsp;  
-      <a href="https://in.linkedin.com/in/ravindra-kumar-205aa5125"><img src="icons/linkedin.png" width="22px" height="22px"></a><br><bR><bR><br>
+      Thanks to<br> <a href="https://www.flaticon.com" target="_blank" class="link">Flaticon</a> | <a href="https://www.pexels.com" class="link">Pexels</a> | <a href="https://www.W3schools.com" class="link">W3schools</a><br><br>
+      <a href="https://www.facebook.com/ravindra.kumar.50767" target="_blank"><img src="icons/facebook.png" width="22px" height="22px"></a>&nbsp; 
+      <a href="http://instagram.com/ravindra_kumarr" target="_blank"><img src="icons/instagram.png" width="22px" height="22px"></a>&nbsp;  
+      <a href="https://in.linkedin.com/in/ravindra-kumar-205aa5125" target="_blank"><img src="icons/linkedin.png" width="22px" height="22px"></a><br><bR><bR><br>
     </div>
     <!--End of footer element-->
 

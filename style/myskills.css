@@ -1,15 +1,23 @@
-.myskills {
-    width: 100%;
-    background-color: rgba(0,0,0,0.1);
-    border-radius: 2px; 
-    color: #fff;
-  }
-  
-  #react, #angular, #laravel {
-    width: 1%;
-    height: 12px;
-    border-radius: 2px; 
-    background-color: rgb(0, 204, 153);
-  }
+#bars {
+	margin: 2em auto;
+	max-width: 960px;
+	overflow: hidden;
+}
 
-  .skill-name{font-size: 14px;}
+.bar {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+.bar h3 {
+	font-size: 1.4em;
+	font-weight: normal;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.bar-circle {
+	display: block;
+	margin: 0.7em auto;
+}
