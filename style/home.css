@@ -1,6 +1,6 @@
 body{
-    margin: 0; font-size: 14px; text-align: center;
-    background-color: rgba(0,0,0,0.03); 
+    margin: 0; font-size: 14px; text-align: center; word-spacing: 1.5px; letter-spacing: 0.3px;
+    background-color: rgba(0,0,0,0.02); 
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
@@ -8,40 +8,80 @@ body{
   box-sizing: border-box;
 }
 
+/*--------------------------------------------------------------------------------*/
+
 .jumbo-element{
   width: 100%; height: 400px; text-align: center; background:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('../assets/beach.jpg'); background-size: 100% 100%;
   background-repeat: no-repeat; position: absolute; top: 0; z-index: -1; 
 } 
 .inside-jumbo-element{width: 80%; margin-left: 10%; margin-top: 125px; font-family: 'Alata'; font-size: 30px; color: white;}
 
+/*--------------------------------------------------------------------------------*/
+
 .second-element{width: 80%; margin-left: 10%; min-height: 400px; margin-top: 450px; line-height: 1.8;}
 .second-element:after{display: table; content: ""; clear: both;}
 .second-element-left{float: left; width: 40%; 
   background-image: linear-gradient(to right, rgb(99, 194, 114) , rgb(145, 212, 155)); color: white;}
 .second-element-right{float: left; width: 55%;margin-left: 5%; text-align: left;}
+@media only screen and (max-width: 800px) {
+  .second-element-left, .second-element-right {
+    width: 90%; margin-left: 5%;
+  }
+}
+
+/*--------------------------------------------------------------------------------*/
 
 
-.third-element{width: 80%; margin-left: 10%; padding: 25px 0px 25px 0px; min-height: 600px;}
+.third-element{width: 80%; margin-left: 10%; padding: 20px 0px 10px 0px; min-height: 300px;}
 .third-element:after{display: table; content: ""; clear: both;}
-.third-element-child{width: 30%; margin-left: 3.33%; float: left; min-height: 500px; line-height: 1.8;
-   text-align: left; padding-bottom: 10px;}
+.third-element-child{width: 30%; margin-left: 3.33%; float: left; min-height: 300px; line-height: 1.8;
+   text-align: left; padding-bottom: 10px; border-radius: 2px; background-color: #fff;}
+.third-element-child:hover{box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px;  transition: 0.7s; cursor: pointer;}   
+@media only screen and (max-width: 800px) {
+  .third-element-child{width: 90%; margin-left: 5%; margin-top: 20px;}
+}
 
+/*--------------------------------------------------------------------------------*/
 
 .fourth-element{width: 80%; margin-left: 10%; padding: 25px 0px 25px 0px; min-height: 400px;}
 .fourth-element:after{display: table; content: ""; clear: both;}
-.fourth-element-left-child{width: 40%; float: left; text-align:left; height: 500px;line-height: 1.8;}
-.fourth-element-right-child{width: 55%; margin-left: 5%; text-align: left;float: left; height: 500px; line-height: 1.8; }  
+.fourth-element-left-child{width: 40%; float: left; text-align:left; height: 500px;line-height: 1.8; }
+.fourth-element-right-child{width: 55%; margin-left: 5%; text-align: left;float: left; height: 500px; line-height: 1.8; color: rgba(0,0,0,0.7); }  
+@media only screen and (max-width: 800px) {
+  .fourth-element-left-child, .fourth-element-right-child{width: 90%; margin-left: 5%;}
+}
 
-.fourth-element-left-child-sub-left, .fourth-element-left-child-sub-cat-left{width: 50%; float: left; text-align: left; padding: 8px 0px 8px 0px;}
-.fourth-element-left-child-sub-right, .fourth-element-left-child-sub-cat-right{width: 50%; float: left; text-align: right; padding: 8px 0px 8px 0px;}
+.fourth-element-left-child-sub-left, .fourth-element-left-child-sub-cat-left{width: 50%; float: left; text-align: left; padding: 10px 0px 10px 0px; }
+.fourth-element-left-child-sub-right, .fourth-element-left-child-sub-cat-right{width: 50%; float: left; text-align: right; padding: 10px 0px 10px 0px;}
+.fourth-element-left-child-sub-cat-left{color: rgba(0,0,0,0.7);}
+.fourth-element-left-child-sub-cat-right{color: rgba(0,0,0,0.7);}
+
+/*--------------------------------------------------------------------------------*/
 
 
-
-.fifth-element{width: 80%; margin-left: 10%; padding: 25px 0px 25px 0px; min-height: 200px;}
+.fifth-element{width: 80%; margin-left: 10%; min-height: 600px; }
 .fifth-element:after{display: table; content: ""; clear: both;}
-.fifth-element-child{float: left;width: 21%; margin-left: 2%; margin-top: 25px; border-radius: 3px; padding: 1%; box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.025); height: 200px; line-height: 1.7;}
-.fifth-element-child:hover{margin-top: -1px; transition-duration: 1s; cursor: pointer; box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.05);}
+
+.fifth-element-grid-1{float: left; width: 40%; min-height: 600px;}
+.fifth-element-grid-2{float: left; width: 34%; min-height: 600px; margin-left: 1%;}
+.fifth-element-grid-3{float: left; width: 24%; min-height: 600px; margin-left: 1%;}
+
+.fifth-element-content{width: 100%; text-align: left; margin-top: 10px;  border-radius: 2px; font-size:12px; line-height: 1.7em;}
+.fifth-element-content:hover{box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 12px; transition: 0.5s; cursor: pointer;}
+.fifth-element-text-content{width: 100%; height: 100px; position: relative;  background-color: rgba(0,0,0,0.6); color: #fff;}
+
+.back-1{background: url('../assets/beach.jpg');}
+.back-2{background: url('../assets/project1.jpg');}
+.back-3{background: url('../assets/project2.jpg');}
+.back-4{background: url('../assets/project3.jpg');}
+.back-5{background: url('../assets/beach.jpg');}
+.back-6{background: url('../assets/project1.jpg');}
+.back-7{background: url('../assets/project2.jpg');}
+.back-1, .back-2, .back-3, .back-4, 
+.back-5, .back-6, .back-7 {background-repeat: no-repeat; background-size: cover;}
+
+/*--------------------------------------------------------------------------------*/
 
 .footer-element{width: 100%; margin-top: 30px; padding: 25px 0px 25px 0px;
-  background-color: rgba(0,0,0,0.8); color: #f2f2f2; width: 100%; margin-left: 0%; font-size: 13px;}
+  background-color: rgba(0,0,0,0.08); color: #4d4d4d; width: 100%; margin-left: 0%; font-size: 13px;}
  /*lets do second commit*/ 
