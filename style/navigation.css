@@ -34,7 +34,7 @@
     display: block;
   }
   .navbar-links ul li a:hover {
-    background: rgb(99, 194, 114);
+    background: rgb(0, 136, 204);
     color: #fff;
   }
   .togglebtn {

@@ -18,10 +18,16 @@ body{
 
 /*--------------------------------------------------------------------------------*/
 
-.second-element{width: 80%; margin-left: 10%; min-height: 400px; margin-top: 450px; line-height: 1.8;}
+
+.bio-part{width: 80%; margin-left: 10%; padding: 20px 0px 20px 0px; text-align: left;
+  margin-top: 450px; line-height: 1.8; background-color: #fff;}
+
+
+/*--------------------------------------------------------------------------------*/
+
+.second-element{width: 80%; margin-left: 10%; min-height: 400px; margin-top: 50px; line-height: 1.8;}
 .second-element:after{display: table; content: ""; clear: both;}
-.second-element-left{float: left; width: 40%; 
-  background-image: linear-gradient(to right, rgb(99, 194, 114) , rgb(145, 212, 155)); color: white;}
+.second-element-left{float: left; width: 40%; color: white; text-align: left;}
 .second-element-right{float: left; width: 55%;margin-left: 5%; text-align: left;}
 @media only screen and (max-width: 800px) {
   .second-element-left, .second-element-right {
@@ -51,10 +57,12 @@ body{
   .fourth-element-left-child, .fourth-element-right-child{width: 90%; margin-left: 5%;}
 }
 
-.fourth-element-left-child-sub-left, .fourth-element-left-child-sub-cat-left{width: 50%; float: left; text-align: left; padding: 10px 0px 10px 0px; }
-.fourth-element-left-child-sub-right, .fourth-element-left-child-sub-cat-right{width: 50%; float: left; text-align: right; padding: 10px 0px 10px 0px;}
+.fourth-element-left-child-sub-left, .fourth-element-left-child-sub-cat-left{width: 50%; float: left; text-align: left;padding: 10px 0px 10px 0px; color: #4d4d4d;}
+.fourth-element-left-child-sub-right, .fourth-element-left-child-sub-cat-right{width: 50%; float: left; text-align: right; padding: 10px 0px 10px 0px; color: #4d4d4d;}
 .fourth-element-left-child-sub-cat-left{color: rgba(0,0,0,0.7);}
 .fourth-element-left-child-sub-cat-right{color: rgba(0,0,0,0.7);}
+
+
 
 /*--------------------------------------------------------------------------------*/
 
@@ -65,10 +73,17 @@ body{
 .fifth-element-grid-1{float: left; width: 40%; min-height: 600px;}
 .fifth-element-grid-2{float: left; width: 34%; min-height: 600px; margin-left: 1%;}
 .fifth-element-grid-3{float: left; width: 24%; min-height: 600px; margin-left: 1%;}
+@media only screen and (max-width: 800px) {
+  .fifth-element-grid-1,
+  .fifth-element-grid-2,
+  .fifth-element-grid-3{
+    width: 100%; margin-left: 0; 
+  }
+}
 
 .fifth-element-content{width: 100%; text-align: left; margin-top: 10px;  border-radius: 2px; font-size:12px; line-height: 1.7em;}
 .fifth-element-content:hover{box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 12px; transition: 0.5s; cursor: pointer;}
-.fifth-element-text-content{width: 100%; height: 100px; position: relative;  background-color: rgba(0,0,0,0.6); color: #fff;}
+.fifth-element-text-content{width: 100%; height: 100px; position: relative;  background-color: rgba(0,0,0,0.4); color: rgba(255,255,255,0.8);}
 
 .back-1{background: url('../assets/beach.jpg');}
 .back-2{background: url('../assets/project1.jpg');}
@@ -81,6 +96,33 @@ body{
 .back-5, .back-6, .back-7 {background-repeat: no-repeat; background-size: cover;}
 
 /*--------------------------------------------------------------------------------*/
+
+
+.sixth-element{width: 80%; margin-left: 10%; min-height: 500px;}
+.sixth-element:after{display: table; content: ""; clear: both;}
+
+.design-block{width:48%; margin-left: 2%; float: left; height: 175px; margin-top: 10px; 
+  line-height: 1.8; text-align: left;}
+.design-block::after{display: table; content: ""; clear: both;}
+.quality-back-1{background: url('../icons/quality.svg');}
+.quality-back-2{background: url('../icons/business.svg');}
+.quality-back-3{background: url('../icons/clock.svg');}
+.quality-back-4{background: url('../icons/data.svg');}
+.quality-back-1, .quality-back-2, .quality-back-3, .quality-back-4{background-repeat:no-repeat;background-size: 50px; 
+  background-position: 45% 50%;}
+
+
+.left-design-block{float: left; width: 20%; background-color: rgba(0,0,0,0.65);
+   color: #fff; height: 175px; border-top-left-radius: 3px; border-bottom-left-radius: 3px;}
+.right-design-block{float: left; width: 80%; height: 175px; 
+  background-color: #fff; border-top-right-radius: 3px; border-bottom-right-radius: 3px;}
+
+@media only screen and (max-width: 800px) {.design-block{width: 100%; margin-top: 0%; margin-top: 20px; height: 200px;}} 
+@media only screen and (max-width: 800px) {.left-design-block,.right-design-block{height: 200px;}}
+
+
+/*--------------------------------------------------------------------------------*/
+
 
 .footer-element{width: 100%; margin-top: 30px; padding: 25px 0px 25px 0px;
   background-color: rgba(0,0,0,0.08); color: #4d4d4d; width: 100%; margin-left: 0%; font-size: 13px;}
