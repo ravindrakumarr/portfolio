@@ -1,23 +1,14 @@
-#bars {
-	margin: 2em auto;
-	max-width: 960px;
-	overflow: hidden;
-}
+.skill-box{width: 100%; margin-left: -2%; text-align: left;}
+.skill-box:after{display: table; content: ""; clear: both;}
+.skill-container{width: 16.66%; padding: 15px 0px 30px 0px; float: left;
+	margin-left: 2%; text-align: center;}
 
-.bar {
-	float: left;
-	width: 25%;
-	text-align: center;
-}
+@media only screen and (max-width: 800px) {
+	.skill-box{margin-left: 0%;}
+  } 
+@media only screen and (max-width: 800px) {
+.skill-container{width: 48%; margin-left: 2%; margin-top: 15px;}
+} 
 
-.bar h3 {
-	font-size: 1.4em;
-	font-weight: normal;
-	margin: 0;
-	text-transform: uppercase;
-}
 
-.bar-circle {
-	display: block;
-	margin: 0.7em auto;
-}
+svg{width:50%;}

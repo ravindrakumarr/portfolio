@@ -9,6 +9,7 @@
 
     <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
     
 </head>
@@ -19,7 +20,7 @@
     <script src="script/navigation.js"></script>
 
     <!---Navigation section-->
-    <header>
+    <header id="my-navbar">
       <nav class="navbar box-shadow" id="navbar">
           <div class="logo"><a href="#">RK</a></div>
           <a class="togglebtn" href="#"><span class="line"></span>
@@ -28,9 +29,9 @@
           <div class="navbar-links">
               <ul>
                   <li><a href="#">Home</a></li>
-                  <li><a href="#">My Blogs</a></li>
-                  <li><a href="#">Work Stuff</a></li>
-                  <li><a href="#">Contact Me</a></li>
+                  <li><a href="#blog-part">My Blogs</a></li>
+                  <li><a href="#work-stuff-part">Work Stuff</a></li>
+                  <li><a href="#contact-part">Contact Me</a></li>
               </ul>
           </div>
       </nav>
@@ -42,8 +43,11 @@
     <!---Top Page Part-->
     <div class="jumbo-element">
         <div class="inside-jumbo-element">
-          <img src="assets/roundme.jpg" class="roundimage"><br/>
-          Hi, this is Ravindra<br>a front-end designer enthusiast
+          <img src="assets/roundme.jpg" class="roundimage box-shadow"><br/>
+          Hi, this is Ravindra !<br/><br/>
+          <div class="inside-jumbo-element-div">A front-end designer enthusiast , with this much years of experince 
+            Experienced in many portfolio projects like bla bla bla.....
+          </div>
         </div> 
     </div>
     <!---End of top page-->
@@ -55,44 +59,106 @@
 
       <div class="padding-5-percent">
 
-        <span class="small-heading">About me</span><br/><br/>
+        <span class="small-heading">know about me</span><br/><br/>
         To take a challenging role as Front End Web Developer in a highly technical company where I could utilize my skills in Web Design, 
         Front-End Web Development, Software, and CMS/e-Commerce and use these skills in providing quality service to the company.
-
         <br/><br/>
 
+        <div class="achievement-row">
 
-        <div class="timeline">
-          <div class="container left">
-            <div class="content box-shadow">
-              <h2><span class="small-black-heading">Aug 2019 - Present</span></h2>
-
-              <p>Lorem ipsum..</p>
-            </div>
+          <div class="achievement-block">
+            <span class="achievement-numeric">1+</span>
+            <br/>
+            Year Experience
           </div>
 
-          <div class="container right">
-            <div class="content box-shadow">
-              <h2><span class="small-black-heading">Jan 2019 - May 2019</span></h2>
-              <p>Lorem ipsum..</p>
-            </div>
+          <div class="achievement-block">
+            <span class="achievement-numeric">7+</span>
+            <br/>
+            GitHub projects
           </div>
 
-          <div class="container left">
-            <div class="content box-shadow">
-              <h2><span class="small-black-heading">Apr 2018 - May 2018</span></h2>
-              <p>Lorem ipsum..</p>
-            </div>
+          <div class="achievement-block">
+            <span class="achievement-numeric">15+</span>
+            <br/>
+            Blog Posts
           </div>
+
+          <div class="achievement-block">
+            <span class="achievement-numeric">8+</span>
+            <br/>
+            Skills & Expertise
+          </div>
+
+          <div class="achievement-block">
+            <span class="achievement-numeric">3+</span>
+            <br/>
+            Program. Lang 
+          </div>
+
+          <div class="achievement-block">
+            <span class="achievement-numeric">2+</span>
+            <br/>
+            Languages 
+          </div>
+
         </div>
-
-
-
+     
+  
       </div>
 
+    </div> 
+    
+     <!-----End of Biography part with timeline -->
+
+
+
+
+    <!----------Start of timeline------>
+
+
+    <div class="timeline">
+      <div class="container left" >
+        <div class="content box-shadow container-background-1">
+          <span class="small-black-heading" style="color: rgb(0, 184, 230);">Aug 2019 - Present</span><br/>
+          <hr class="light-hr-break">
+          <p>Systems Engineer - Infosys, Hyderbad</p>
+          <br/>
+          Worked with many global clients like Bank of America & Pfizer
+          and have understood the organisation level code.
+
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="content box-shadow container-background-2">
+          <span class="small-black-heading" style="color: rgb(255, 102, 102)">Jan 2019 - May 2019</span><br/>
+          <hr class="light-hr-break">
+          <p>Systems Engineer Trainee - Infosys, Mysore</p>
+          <br/>
+          Worked with many global clients like Bank of America & Pfizer
+          and have understood the organisation level code.
+
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content box-shadow container-background-3">
+          <span class="small-black-heading" style="color: rgb(0, 204, 153)">Apr 2018 - May 2018</span><br/>
+          <hr class="light-hr-break">
+          <p>Project Trainee - SAIL, Bokaro</p>
+          <br/>
+          Worked with many global clients like Bank of America & Pfizer
+          and have understood the organisation level code.
+          
+        </div>
+      </div>
     </div>
 
-    <!---End of biography timeline-->
+
+
+
+    <!---End of timeline-->
 
 
 
@@ -101,94 +167,90 @@
     <!--Second element row  & column-->
     <div class="second-element">
 
-      <div class="second-element-left">
 
-        <span class="black-small-heading">My Work Experience</span>
-        <br/><br/>  
-
-        <div class="fourth-element-left-child-sub-left">Systems Engineer</div>
-        <div class="fourth-element-left-child-sub-right"><span class="green-span">Full Time</span></div>
-        <div class="fourth-element-left-child-sub-cat-left"><img src="icons/company.svg" height="15px" width="20px"/>&nbsp;Infosys
-          <img src="icons/location.svg" height="15px" width="20px"/>&nbsp;Hyderbad</div>
-        <div class="fourth-element-left-child-sub-cat-right"><img src="icons/calendar.svg" height="15px" width="20px"/>&nbsp;Aug 2019 - Present</div>
-        <hr class="light-hr-break"/>
-
-        <div class="fourth-element-left-child-sub-left">System Engineer Trainee</div>
-        <div class="fourth-element-left-child-sub-right"><span class="green-span">Internship</span></div>
-        <div class="fourth-element-left-child-sub-cat-left"><img src="icons/company.svg" height="15px" width="20px"/>&nbsp;Infosys 
-          <img src="icons/location.svg" height="15px" width="20px"/>&nbsp;Mysore</div>
-        <div class="fourth-element-left-child-sub-cat-right"><img src="icons/calendar.svg" height="15px" width="20px"/>&nbsp;Jan 2019 - May 2019</div>
-        <hr class="light-hr-break"/>
-        
-        <div class="fourth-element-left-child-sub-left">Project Trainee</div>
-        <div class="fourth-element-left-child-sub-right"><span class="green-span">Training</span></div>
-        <div class="fourth-element-left-child-sub-cat-left"><img src="icons/company.svg" height="15px" width="20px"/>&nbsp;SAIL
-          <img src="icons/location.svg" height="15px" width="20px"/>&nbsp;Bokaro</div>
-        <div class="fourth-element-left-child-sub-cat-right"><img src="icons/calendar.svg" height="15px" width="20px"/>&nbsp;Apr 2018 - May 2018</div>
-        
-
-      </div>
-      
-      <div class="second-element-right">
-
-        <span class="big-black-header">Skills & Expertise Proficiency</span> 
+        <span class="black-small-heading">My Work Experience & Skill Expertise</span>
         <br/><br/>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
         <br/><br/>
 
+        
+        <div class="skill-box">
 
+            <div class="skill-container box-shadow">
+                <svg id="svg" viewbox="0 0 100 100">
+                  <circle cx="50" cy="50" r="45" fill="#ffd633"/>
+                  <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff"
+                        stroke-dasharray="180,180"
+                        d="M50 10
+                          a 40 40 0 0 1 0 80
+                          a 40 40 0 0 1 0 -80"/>
+                  <text x="50" y="50" text-anchor="middle" dy="7" font-size="15">80%</text>
+                </svg>
+                <br/><br/>
+                HTML
+            </div>
 
-      <div id="bars">
+            <div class="skill-container box-shadow">
+                <svg viewbox="0 0 100 100">
+                  <circle cx="50" cy="50" r="45" fill="#ffd633"/>
+                  <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff"
+                        stroke-dasharray="170,170"
+                        d="M50 10
+                          a 40 40 0 0 1 0 80
+                          a 40 40 0 0 1 0 -80"/>
+                  <text x="50" y="50" text-anchor="middle" dy="7" font-size="15">75%</text>
+                </svg>
+                <br/><br/>
+                CSS
+            </div>
 
+            <div class="skill-container box-shadow">
+                <svg viewbox="0 0 100 100">
+                  <circle cx="50" cy="50" r="45" fill="#ffd633"/>
+                  <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff"
+                        stroke-dasharray="251.2,0"
+                        d="M50 10
+                          a 40 40 0 0 1 0 80
+                          a 40 40 0 0 1 0 -80"/>
+                  <text x="50" y="50" text-anchor="middle" dy="7" font-size="15">100%</text>
+                </svg>
+                <br/><br/>
+                JAVASCRIPT
+            </div>
+            
+            <div class="skill-container box-shadow">
+                <svg id="animated" viewbox="0 0 100 100">
+                  <circle cx="50" cy="50" r="45" fill="#ffd633"/>
+                  <path id="progress" stroke-linecap="round" stroke-width="5" stroke="#fff" fill="none"
+                        d="M50 10
+                          a 40 40 0 0 1 0 80
+                          a 40 40 0 0 1 0 -80">
+                  </path>
+                  <text id="count" x="50" y="50" text-anchor="middle" dy="7" font-size="15">100%</text>
+                </svg>
+                <br/><br/>
+                PHP
+            </div>
 
-        <div class="bar" data-percent="80">
-          <h4>CSS</h4>
-          <canvas class="bar-circle" width="70" height="70"></canvas>
-        </div>
-        <div class="bar" data-percent="75">
-          <h4>HTML5</h4>
-          <canvas class="bar-circle" width="70" height="70"></canvas>
-        </div>
-        <div class="bar" data-percent="65">
-          <h4>JavaScript</h4>
-          <canvas class="bar-circle" width="70" height="70"></canvas>
-        </div>
-        <div class="bar" data-percent="50">
-          <h4>PHP</h4>
-          <canvas class="bar-circle" width="70" height="70"></canvas>
-        </div>
-
-        <div class="bar" data-percent="80">
-          <h4>Front End</h4>
-          <canvas class="bar-circle" width="70" height="70"></canvas>
-        </div>
-        <div class="bar" data-percent="80">
-          <h4>Back End</h4>
-          <canvas class="bar-circle" width="70" height="70"></canvas>
-        </div>
-        <div class="bar" data-percent="80">
-          <h4>Linux</h4>
-          <canvas class="bar-circle" width="70" height="70"></canvas>
-        </div>
-        <div class="bar" data-percent="80">
-          <h4>Laravel</h4>
-          <canvas class="bar-circle" width="70" height="70"></canvas>
-        </div>
-
-
-      </div>
+        </div>  
 
       
       
-
-      </div>
 
     </div>
     <!--End of Second element-->
 
 
-    <div class="main-heading">WHY YOU SHOULD HIRE ME ?</div>
+    <div class="main-heading">
+      WHY YOU SHOULD HIRE ME ?<br/><br/>
+      <span class="sub-main-heading">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+      </span>
+    </div>
 
 
     <!--Start of sixth Element-->
@@ -247,8 +309,13 @@
 
 
 
-
-    <div class="main-heading">MY WORK STUFF</div>
+    <div class="main-heading" id="work-stuff-part">
+      MY WORK STUFF<br/><br/>
+      <span class="sub-main-heading">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+      </span>
+    </div>
 
 
     <!--Third Element row & column-->
@@ -299,7 +366,13 @@
     <a href="https://github.com/ravindrakumarr"><button class="learn-more box-shadow">Visit to view more projects</button></a>
 
 
-    <div class="main-heading">MY BLOG POSTS</div>
+    <div class="main-heading" id="blog-part">
+      MY BLOG POSTS<br/><br/>
+      <span class="sub-main-heading">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+      </span>
+    </div>
 
 
     <!--Fifth Element-->
@@ -393,7 +466,7 @@
 
     
     <!--Footer Element-->
-    <div class="footer-element">
+    <div class="footer-element" id="contact-part">
       <br><br><span style="font-size: 20px;" id="contact">Connect With Me Here</span><br><br>
      
       <a href="https://www.facebook.com/ravindra.kumar.50767" target="_blank"><img src="icons/facebook.png" width="22px" height="22px"></a>&nbsp; 
@@ -406,6 +479,18 @@
     </div>
     <!--End of footer element-->
 
+
+
+    <!--Footer navigation only to be visible in mobile size-->
+
+    <div class="footer-navigation">
+      <div class="footer-navigation-tab"><a href="#"><button class="footer-navigation-button">Home</button></a></div>
+      <div class="footer-navigation-tab"><a href="#blog-part"><button class="footer-navigation-button">Blogs</button></a></div>
+      <div class="footer-navigation-tab"><a href="#work-stuff-part"><button class="footer-navigation-button">Works</button></a></div>
+      <div class="footer-navigation-tab"><a href="#blog-part"><button class="footer-navigation-button">Contact</button></a></div>
+    </div>
+
+    <!--End of footer navigation-->
 
 </body>
 

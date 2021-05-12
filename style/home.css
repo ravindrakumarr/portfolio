@@ -1,5 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{
-    margin: 0; font-size: 14px; text-align: center; word-spacing: 1.5px; letter-spacing: 0.3px;
+    margin: 0; font-size: 14px; text-align: center; word-spacing: 1px; letter-spacing: 0.3px;
     background-color: rgba(0,0,0,0.02); 
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
@@ -14,7 +18,11 @@ body{
   width: 100%; height: 400px; text-align: center; background:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('../assets/beach.jpg'); background-size: 100% 100%;
   background-repeat: no-repeat; position: absolute; top: 0; z-index: -1; 
 } 
-.inside-jumbo-element{width: 80%; margin-left: 10%; margin-top: 125px; font-family: 'Alata'; font-size: 30px; color: white;}
+.inside-jumbo-element{width: 80%; margin-left: 10%; margin-top: 125px; font-family: 'Alata'; font-size: 25px; color: rgba(255,255,255,0.8);}
+@media only screen and (max-width: 800px) {.inside-jumbo-element{font-size: 20px; margin-top: 100px;}}
+
+.inside-jumbo-element-div{width: 60%; margin-left: 20%; font-size: 14px; color: #fff; margin-top: -15px; }
+@media only screen and (max-width: 800px) {.inside-jumbo-element-div{width: 100%; margin-left: 0%;}}
 
 /*--------------------------------------------------------------------------------*/
 
@@ -22,18 +30,20 @@ body{
 .bio-part{width: 80%; margin-left: 10%; padding: 20px 0px 20px 0px; text-align: left;
   margin-top: 450px; line-height: 1.8; background-color: #fff;}
 
+.achievement-row{width: 100%;}
+.achievement-row::after{display: table; content: ""; clear: both;}  
+.achievement-block{width: 15%; margin-left: 1%; background-color: rgba(0, 136, 204,0.1);
+   float: left; font-size: 12px; color: #000; text-align: center; padding: 5px 0px 5px 0px;} 
+.achievement-numeric{font-size: 25px; color: #333} 
+
+@media only screen and (max-width: 800px) {.achievement-block{width: 30%; margin-left: 1.5%; margin-top: 5px; font-size: 10px;}}
+@media only screen and (max-width: 800px) {.achievement-numeric{font-size: 22px;}}
 
 /*--------------------------------------------------------------------------------*/
 
-.second-element{width: 80%; margin-left: 10%; min-height: 400px; margin-top: 50px; line-height: 1.8;}
+.second-element{width: 80%; margin-left: 10%; min-height: 400px; margin-top: 50px; 
+  line-height: 1.8; text-align: left;}
 .second-element:after{display: table; content: ""; clear: both;}
-.second-element-left{float: left; width: 40%; color: white; text-align: left;}
-.second-element-right{float: left; width: 55%;margin-left: 5%; text-align: left;}
-@media only screen and (max-width: 800px) {
-  .second-element-left, .second-element-right {
-    width: 90%; margin-left: 5%;
-  }
-}
 
 /*--------------------------------------------------------------------------------*/
 
@@ -49,7 +59,7 @@ body{
 
 /*--------------------------------------------------------------------------------*/
 
-.fourth-element{width: 80%; margin-left: 10%; padding: 25px 0px 25px 0px; min-height: 400px;}
+.fourth-element{width: 84%; margin-left: 8%; padding: 25px 0px 25px 0px; min-height: 400px;}
 .fourth-element:after{display: table; content: ""; clear: both;}
 .fourth-element-left-child{width: 40%; float: left; text-align:left; height: 500px;line-height: 1.8; }
 .fourth-element-right-child{width: 55%; margin-left: 5%; text-align: left;float: left; height: 500px; line-height: 1.8; color: rgba(0,0,0,0.7); }  
@@ -98,10 +108,10 @@ body{
 /*--------------------------------------------------------------------------------*/
 
 
-.sixth-element{width: 80%; margin-left: 10%; min-height: 500px;}
+.sixth-element{width: 84%; margin-left: 8%; min-height: 500px;}
 .sixth-element:after{display: table; content: ""; clear: both;}
 
-.design-block{width:48%; margin-left: 2%; float: left; height: 175px; margin-top: 10px; 
+.design-block{width:48%; margin-left: 2%; float: left; height: 190px; margin-top: 10px; 
   line-height: 1.8; text-align: left;}
 .design-block::after{display: table; content: ""; clear: both;}
 .quality-back-1{background: url('../icons/quality.svg');}
@@ -112,18 +122,18 @@ body{
   background-position: 45% 50%;}
 
 
-.left-design-block{float: left; width: 20%; background-color: rgba(0,0,0,0.65);
-   color: #fff; height: 175px; border-top-left-radius: 3px; border-bottom-left-radius: 3px;}
-.right-design-block{float: left; width: 80%; height: 175px; 
+.left-design-block{float: left; width: 20%; background-color: rgba(0, 136, 204,0.3);
+   color: #fff; height: 190px; border-top-left-radius: 3px; border-bottom-left-radius: 3px;}
+.right-design-block{float: left; width: 80%; height: 190px; 
   background-color: #fff; border-top-right-radius: 3px; border-bottom-right-radius: 3px;}
 
-@media only screen and (max-width: 800px) {.design-block{width: 100%; margin-top: 0%; margin-top: 20px; height: 200px;}} 
-@media only screen and (max-width: 800px) {.left-design-block,.right-design-block{height: 200px;}}
+@media only screen and (max-width: 800px) {.design-block{width: 100%; margin-top: 0%; margin-top: 20px; height: 210px;}} 
+@media only screen and (max-width: 800px) {.left-design-block,.right-design-block{height: 210px;}}
 
 
 /*--------------------------------------------------------------------------------*/
 
 
-.footer-element{width: 100%; margin-top: 30px; padding: 25px 0px 25px 0px;
+.footer-element{width: 100%; margin-top: 30px; padding: 25px 0px 50px 0px;
   background-color: rgba(0,0,0,0.08); color: #4d4d4d; width: 100%; margin-left: 0%; font-size: 13px;}
  /*lets do second commit*/ 
