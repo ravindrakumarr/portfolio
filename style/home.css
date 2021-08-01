@@ -21,7 +21,7 @@ body{
 .inside-jumbo-element{width: 80%; margin-left: 10%; margin-top: 125px; font-family: 'Alata'; font-size: 25px; color: rgba(255,255,255,0.8);}
 @media only screen and (max-width: 800px) {.inside-jumbo-element{font-size: 20px; margin-top: 100px;}}
 
-.inside-jumbo-element-div{width: 60%; margin-left: 20%; font-size: 14px; color: #fff; margin-top: -15px; }
+.inside-jumbo-element-div{width: 60%; margin-left: 20%; font-size: 15px; color: #fff; margin-top: -15px; }
 @media only screen and (max-width: 800px) {.inside-jumbo-element-div{width: 100%; margin-left: 0%;}}
 
 /*--------------------------------------------------------------------------------*/
@@ -93,17 +93,19 @@ body{
 
 .fifth-element-content{width: 100%; text-align: left; margin-top: 10px;  border-radius: 2px; font-size:12px; line-height: 1.7em;}
 .fifth-element-content:hover{box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 12px; transition: 0.5s; cursor: pointer;}
-.fifth-element-text-content{width: 100%; height: 100px; position: relative;  background-color: rgba(0,0,0,0.4); color: rgba(255,255,255,0.8);}
+.fifth-element-text-content{width: 100%; height: 100px; position: relative;  background-color: rgba(0,0,0,0.7); color: rgba(255,255,255,0.8);}
 
-.back-1{background: url('../assets/beach.jpg');}
-.back-2{background: url('../assets/project1.jpg');}
-.back-3{background: url('../assets/project2.jpg');}
-.back-4{background: url('../assets/project3.jpg');}
-.back-5{background: url('../assets/beach.jpg');}
-.back-6{background: url('../assets/project1.jpg');}
-.back-7{background: url('../assets/project2.jpg');}
+.back-1{background: url('../assets/aws.jpg');}
+.back-2{background: url('../assets/gitpull.png');}
+.back-3{background: url('../assets/gitpush.png');}
+.back-4{background: url('../assets/googleauth.png'); }
+.back-5{background: url('../assets/reactcompo.jpg');}
+.back-6{background: url('../assets/mongo.png');}
+.back-7{background: url('../assets/multifilter.png');}
 .back-1, .back-2, .back-3, .back-4, 
-.back-5, .back-6, .back-7 {background-repeat: no-repeat; background-size: cover;}
+.back-5, .back-6, .back-7 {background-repeat: no-repeat; background-size: 100% 100%;}
+
+.article_link{text-decoration: underline; color: #fff; font-weight: bold;}
 
 /*--------------------------------------------------------------------------------*/
 
