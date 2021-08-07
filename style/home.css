@@ -109,7 +109,16 @@ body{
 
 /*--------------------------------------------------------------------------------*/
 
+.recog_headline{text-decoration:underline;}
 
+.recognition-element{width: 80%; margin-left: 10%; min-height: 250px;}
+.recognition-element:after{display: table; content: ""; clear: both;}
+.recognition-left, .recognition-right{width: 50%; float: left; min-height:250px; line-height: 1.7;}
+
+@media only screen and (max-width: 800px) {.recognition-left, .recognition-right{width: 100%;}}
+
+
+/*--------------------------------------------------------------------------------*/
 .sixth-element{width: 84%; margin-left: 8%; min-height: 500px;}
 .sixth-element:after{display: table; content: ""; clear: both;}
 

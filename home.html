@@ -1,7 +1,9 @@
 <html>
 <head>
+    
+   <meta name="viewport" content="width=device-width, initial-scale=1">    
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>ðŸŽ¯</text></svg>">
 
     <title>Portfolio</title>
     <link rel="stylesheet" href="style/home.css">
@@ -9,6 +11,7 @@
     <link rel="stylesheet" href="style/navigation.css">
     <link rel="stylesheet" href="style/myskills.css">
     <link rel="stylesheet" href="style/timeline.css">
+    <link rel="stylesheet" href="style/modalimage.css">
 
     <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -62,8 +65,8 @@
       <div class="padding-5-percent">
 
         <span class="small-heading"><h4>Who am I</h4></span>
-        Front end developing enthusiast working in Infosys. Have an experience of 1.8 Years. Worked in various technologies & learning more.
-        A creative person with idealistic approach to build the required architecture.
+        Front end developing enthusiast with decent knowledge in different technologies and frameworks. Learning & adding
+        more to the stack. A creative person with idealistic approach to build the required architecture.
         <br/><br/>
 
         <div class="achievement-row">
@@ -313,9 +316,70 @@
 
     </div>
 
-
-
     <!--End of sixth Element-->
+
+
+    <!--Start of Recognition Element-->
+
+    <div class="main-heading">
+      REWARDS & RECOGNITIONS<br/><br/>
+      <span class="sub-main-heading">
+        Received couple of appreciation for <br/>
+        efforts made on the respective project & its application. Please have a look. 
+      </span>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+    </div>
+
+    <div id="myModal2" class="modal">
+      <span class="close2">&times;</span>
+      <img class="modal-content" id="img02">
+    </div>
+
+
+    <div class="recognition-element">
+
+      <div class="recognition-left" style="text-align: left;">
+        <br/>
+        <span class="recog_headline">Client Appreciation for smooth deployment of Q2 release of Application</span><br/><br/>
+        <span class="sub-main-heading">
+          While working for this client on their project, I received appreciation for efforts made through different channels.
+          Provided one was received for a Q2 release efforts & smooth deployment of the Application's new version.
+          <br/><br/>
+          Particularly my role was to bring changes on UI according to their new requirments & some bug fixes related to Application's feature. 
+
+        </span>
+      </div>
+
+      <div class="recognition-right">
+        <img id="myImg1" src="assets/Pfizer_Certificate.png" width="100%" height="240px">
+      </div>
+
+    </div>
+
+    <div class="recognition-element">
+
+      <div class="recognition-left">
+        <img id="myImg2" src="assets/Infosys_Certificate.jpeg" width="100%" height="240px">
+      </div>
+
+      <div class="recognition-right" style="text-align: right;">
+        <br/>
+        <span class="recog_headline">Insta Awards for maitaining a hygiene on Application issues</span><br/><br/>
+        <span class="sub-main-heading">
+          Received this appreciation certificate for resolving issues on the client's application & for the efforts made 
+          to maintain a hygiene in code standard for bug fixes on their Laravel-Salesforce based application.
+        </span>
+      </div>
+
+    </div>
+
+    <!--End of Recognition Element-->
 
 
 
@@ -531,6 +595,50 @@
     </div>
 
     <!--End of footer navigation-->
+
+
+
+
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg1");
+      var modalImg = document.getElementById("img01");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      }
+
+      // Get 2nd image
+      var modal2 = document.getElementById("myModal2");
+
+      var img2 = document.getElementById("myImg2");
+      var modalImg2 = document.getElementById("img02");
+
+      img2.onclick = function(){
+        modal2.style.display = "block";
+        modalImg2.src = this.src;
+      }
+      
+      // Get the <span> element that closes the modal
+      var span1 = document.getElementsByClassName("close")[0];
+      var span2 = document.getElementsByClassName("close2")[0];
+      
+      // When the user clicks on <span> (x), close the modal
+      span1.onclick = function() { 
+        modal.style.display = "none";
+      }
+      span2.onclick = function() { 
+        modal2.style.display = "none";
+      }
+      </script>
+      
+
+
+
 
 </body>
 
